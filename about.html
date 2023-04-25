@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/8c6de87254.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>About</title>
+  </head>
+  <body>
+    <header class="head">
+      <img class="logo" src="logo.png" />
+      <div class="navlinks">
+        <a class="nav" href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a class="nav" href="explore.html"
+          ><i class="fa-solid fa-compass"></i
+        ></a>
+        <a class="nav-selected"><i class="fa-solid fa-circle-info"></i></a>
+      </div>
+    </header>
+    <h1 class="section-text">ABOUT</h1>
+    <div class="about-content">
+      <img src="logo.png" width="25%" />
+      <h1 class="section-text" style="color: rgb(246, 157, 29)">World Traveler Magazine</h1>
+      <hr />
+      <h1 class="section-text">MISSION</h1>
+      <p class="passage">
+        Our mission is to inspire and inform our readers about the world of
+        travel. We strive to provide compelling and informative content that
+        helps our readers discover new destinations and experiences, and to
+        learn about the cultures and people of the places they visit.
+      </p>
+      <h1 class="section-text">VISION</h1>
+      <p class="passage">
+        Our vision is to be the premier source of travel inspiration and
+        information for our readers. We want to help our readers explore the
+        world and discover all it has to offer, and to inspire them to travel
+        more often and to new and exciting places.
+      </p>
+      <hr />
+      <h1 class="section-text">HISTORY</h1>
+      <p class="passage">
+        World Traveler Magazine was founded in 1995 by a group of experienced
+        travelers and travel industry professionals. Since then, we have grown
+        to become one of the leading travel magazines in the industry, with a
+        global readership and a reputation for providing top-quality content and
+        inspiration.
+      </p>
+      <hr />
+      <h1 class="section-text">SERVICES</h1>
+      <p class="passage">
+        We offer a wide range of travel-related content, including destination
+        guides, travel tips, and features on culture and adventure. We also
+        offer a digital edition of the magazine, which allows our readers to
+        access our content on their devices anytime, anywhere.
+      </p>
+      <hr />
+      <h1 class="section-text">DESTINATIONS</h1>
+      <p class="passage">
+        We cover a wide range of destinations around the world, from popular
+        tourist hotspots to off-the-beaten-path destinations. We strive to
+        provide our readers with a diverse and well-rounded perspective on the
+        world of travel.
+      </p>
+      <hr />
+      <h1 class="section-text">CONTACT US</h1>
+      <p class="passage">
+        <strong> World Traveler Magazine </strong><br>
+        Edsa Corner Timog Avenue<br>
+        Diliman, Quezon City Philippines 1101<br><br>
+        <i class="fa-solid fa-envelope"></i> : info@worldtraveler.com<br>
+        <i class="fa-solid fa-phone"></i> : 555-555-1212<br>
+        <i class="fa-solid fa-globe"></i> : www.worldtraveler.com
+      </p>
+    </div>
+    <footer>
+      <p class="foottext">© Copyright 2022, Developed by Kendrix Brosas</p>
+      <div class="foot">
+        <a class="footright" href="https://www.facebook.com/kendrixbrosas"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a class="footright" href="https://www.twitter.com/kndrxxe"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a class="footright" href="https://www.instagram.com/kndrxxe"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a class="footright" href="https://www.linkedin.com/in/kendrixbrosas"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+    </footer>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000);
+      }
+    </script>
+  </body>
+</html>
